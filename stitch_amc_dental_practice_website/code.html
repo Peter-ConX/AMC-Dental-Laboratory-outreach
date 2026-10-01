@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-error-container":"#93000a","surface-container-low":"#f4f3f1","on-background":"#1a1c1a","outline-variant":"#c5c6cd","inverse-on-surface":"#f2f1ee","on-primary-fixed":"#0e1c2f","inverse-primary":"#bac7e1","on-primary":"#ffffff","primary":"#000000","on-tertiary-fixed-variant":"#4a463f","surface-dim":"#dbdad7","on-secondary-container":"#2f6c6a","surface-container":"#efeeeb","surface-container-high":"#e9e8e5","surface-variant":"#e3e2e0","secondary-fixed":"#b1eeeb","surface-container-lowest":"#ffffff","surface":"#faf9f6","primary-fixed":"#d6e3fe","on-tertiary":"#ffffff","inverse-surface":"#2f312f","tertiary-container":"#1e1b15","secondary":"#2a6866","tertiary-fixed":"#e8e2d8","secondary-container":"#aeebe8","on-error":"#ffffff","on-secondary-fixed-variant":"#084f4e","on-tertiary-fixed":"#1e1b15","on-tertiary-container":"#88837b","error":"#ba1a1a","surface-container-highest":"#e3e2e0","on-surface-variant":"#44474c","outline":"#75777d","primary-container":"#0e1c2f","on-surface":"#1a1c1a","secondary-fixed-dim":"#95d1cf","on-primary-fixed-variant":"#3a475c","error-container":"#ffdad6","background":"#faf9f6","surface-bright":"#faf9f6","surface-tint":"#525f75","on-secondary-fixed":"#00201f","tertiary-fixed-dim":"#ccc6bc","tertiary":"#000000","on-primary-container":"#77849c","primary-fixed-dim":"#bac7e1","on-secondary":"#ffffff"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"margin":"3rem","space-md":"1rem","gutter":"1.5rem","margin-mobile":"1.25rem","space-2xl":"4rem","space-xs":"0.25rem","space-xl":"2.5rem","space-lg":"1.5rem","gutter-mobile":"1rem","space-sm":"0.5rem"},fontFamily:{"headline-xl-mobile":["Plus Jakarta Sans"],"display-lg-mobile":["Plus Jakarta Sans"],"headline-xl":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"label-caps":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"title-md":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"]},fontSize:{"headline-xl-mobile":["30px",{"lineHeight":"38px","letterSpacing":"-0.02em","fontWeight":"600"}],"display-lg-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-xl":["40px",{"lineHeight":"48px","letterSpacing":"-0.025em","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.02em","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"400"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"600"}],"label-caps":["11px",{"lineHeight":"16px","letterSpacing":"0.1em","fontWeight":"700"}],"body-lg":["18px",{"lineHeight":"28px","letterSpacing":"0em","fontWeight":"400"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"500"}],"title-md":["18px",{"lineHeight":"26px","letterSpacing":"-0.005em","fontWeight":"600"}],"body-md":["15px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"400"}],"display-lg":["56px",{"lineHeight":"64px","letterSpacing":"-0.03em","fontWeight":"600"}],"headline-sm":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"500"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50"><div class="bg-primary-container text-on-primary-fixed text-label-caps font-label-caps py-space-xs px-margin-mobile lg:px-margin shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="w-full flex items-center justify-between"><div class="flex items-center gap-space-sm"><span class="inline-block w-1.5 h-1.5 rounded-full bg-secondary"></span><span class="tracking-wider">Welcoming new private patients • Gentle, bespoke dental care • Click to call or book online</span></div><div class="flex items-center gap-space-md"><a class="hidden sm:inline-flex items-center gap-1.5 text-on-primary-container hover:text-on-primary transition-colors" href="tel:02079460128"><span class="material-symbols-outlined text-[14px]">call</span><span>020 7946 0128</span></a><span class="hidden sm:inline text-outline-variant">•</span><span class="text-on-primary-container">Marylebone, London</span></div></div></div><div class="h-20 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="w-full h-full px-margin-mobile lg:px-margin flex items-center justify-between"><div class="flex items-center gap-space-md"><img alt="AMC Dental Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WFWQUd9ZC0-ZmW4NVCO-ZEg4kEm4PZVGvGxAsf-thJ5eqeMXlghfB92P8v7NW8uJC3fdpjytIVnagQa0T4tLtGRhVAW4843bSRgE9WbzCBun2dEnCYL8teXwMflndDeg-IgZY4JyMwEhdgVPi9V5jgMrXYi-zZLUnJtQVUkCjheY0BnaDTDYKpR0oR3OnVYSU0m2Mk3lTCIhlgkbuyuPuH1znPqDbBN13c7Nc9LQh2Kl2OK_QWTtEvbWo"/><a class="flex flex-col" data-path="home" href="#"><span class="font-title-md text-title-md text-on-surface tracking-tight leading-none">AMC DENTAL</span><span class="font-label-caps text-label-caps text-secondary tracking-widest leading-none mt-1">BOUTIQUE PRACTICE</span></a></div><nav class="hidden lg:flex items-center gap-space-lg" data-active-classes="bg-surface-container-high text-on-surface font-semibold rounded-lg"><a aria-current="page" class="px-space-sm py-1 transition-colors bg-surface-container-high text-on-surface font-semibold rounded-lg" data-path="home" href="#">Home</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface px-space-sm py-1 transition-colors" data-path="about" href="#">About</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface px-space-sm py-1 transition-colors" data-path="treatments" href="#">Treatments</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface px-space-sm py-1 transition-colors" data-path="patient-care" href="#">Patient Care</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface px-space-sm py-1 transition-colors" data-path="faqs" href="#">FAQs</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface px-space-sm py-1 transition-colors" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-space-md"><a class="hidden xl:flex flex-col text-right" href="tel:02079460128"><span class="font-label-caps text-label-caps text-on-surface-variant">Direct Clinical Line</span><span class="font-label-lg text-label-lg text-on-surface font-semibold">020 7946 0128</span></a><a class="inline-flex items-center justify-center bg-primary-container text-on-primary font-label-lg text-label-lg px-space-lg py-space-sm rounded-full hover:bg-secondary transition-all shadow-[0_4px_16px_rgba(11,25,44,0.08)] hover:shadow-[0_4px_20px_rgba(45,106,104,0.25)]" data-path="book-appointment" href="#"><span class="material-symbols-outlined text-[18px] mr-1.5">calendar_month</span>Book an Appointment</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-28 bg-surface"><div class="flex flex-col w-full">
+<!-- 1. HERO SECTION -->
+<section class="w-full px-margin-mobile lg:px-margin py-space-xl lg:py-space-2xl bg-surface">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<div class="lg:col-span-6 flex flex-col gap-space-lg">
+<div class="inline-flex items-center gap-space-xs px-space-md py-1.5 rounded-full bg-surface-container-high w-fit">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-caps text-label-caps text-secondary tracking-widest uppercase">Private Clinical Practice</span>
+</div>
+<h1 class="font-display-lg text-display-lg text-on-surface tracking-tight">
+          Modern Dental Care, <br/>
+<span class="text-secondary font-headline-xl">Built Around You.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl leading-relaxed">
+          Professional dental care in a calm, welcoming environment, with treatment designed around your needs, comfort and long-term oral health.
+        </p>
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs">
+<a class="inline-flex items-center justify-center bg-primary-container text-on-primary font-label-lg text-label-lg px-space-xl py-space-md rounded-full shadow-md hover:bg-secondary transition-all" data-path="book-appointment" href="#">
+<span class="material-symbols-outlined text-[18px] mr-2">calendar_today</span>
+            Book an Appointment
+          </a>
+<a class="inline-flex items-center justify-center bg-surface-container text-on-surface font-label-lg text-label-lg px-space-xl py-space-md rounded-full hover:bg-surface-container-high transition-all" href="#services">
+            Explore Our Treatments
+            <span class="material-symbols-outlined text-[18px] ml-1.5">arrow_forward</span>
+</a>
+</div>
+<div class="flex items-center gap-space-xl pt-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">spa</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Unhurried Appointments</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">verified</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Evidence-Based Clinical Practice</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-6 relative">
+<div class="relative rounded-2xl overflow-hidden shadow-xl bg-surface-container">
+<img class="w-full h-[480px] lg:h-[540px] object-cover" data-alt="Architectural dental reception lounge with natural light, warm curved fluted oak timber wall panelling, bespoke limestone reception desk, boucle lounge armchairs, and olive foliage on a solid timber coffee table, reflecting tranquil luxury." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-X7wDZNJ3SK9JEq0l0d6JR2e7Q_Z4EbhUUbJX3Q90DfLV1vDtAlS7-93x0aa1riy2U_qz8k6eOG37MZ9-_wPggnsjl44pA3yeNFUg9HndDN0VCLhHHzbmrB6GL1urb6BUFGwF-WjDPWv_0gmZ03VTzyjCYSjkoukUh8_xCvQfU2U-ltFLWzmudaZM5wFc3lZpYE-kzuozOS5WQqyAe8R2cabXhCdZ2CtgV85hicZOeDpwhekpcotQ_g"/>
+<div class="absolute bottom-4 left-4 right-4 bg-surface/90 backdrop-blur-md p-space-md rounded-xl flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[24px]">architecture</span>
+<div>
+<p class="font-label-lg text-label-lg text-on-surface font-semibold">Architectural Clinic Space</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">A peaceful environment engineered to eliminate apprehension</p>
+</div>
+</div>
+<span class="font-label-caps text-label-caps text-secondary font-bold tracking-widest hidden sm:inline">HARLEY ST.</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. TRUST STRIP -->
+<section class="w-full bg-surface-container-low py-space-xl">
+<div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-lg">
+<div class="flex items-start gap-space-md p-space-md rounded-xl bg-surface-container-lowest shadow-sm">
+<div class="p-space-sm rounded-lg bg-surface-container text-secondary flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">medical_services</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface mb-1">Professional Dental Care</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Dedicated, evidence-based general and cosmetic clinical standards.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-md p-space-md rounded-xl bg-surface-container-lowest shadow-sm">
+<div class="p-space-sm rounded-lg bg-surface-container text-secondary flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">diversity_1</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface mb-1">Patient-Focused Approach</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Care delivered with empathy, transparency, and clinical patience.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-md p-space-md rounded-xl bg-surface-container-lowest shadow-sm">
+<div class="p-space-sm rounded-lg bg-surface-container text-secondary flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">chair</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface mb-1">Modern Clinical Environment</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Calm, thoughtfully curated spaces built purposefully for comfort.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-md p-space-md rounded-xl bg-surface-container-lowest shadow-sm">
+<div class="p-space-sm rounded-lg bg-surface-container text-secondary flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">clinical_notes</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface mb-1">Personalised Treatment</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Bespoke oral health plans tailored to your personal goals and lifestyle.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. ABOUT AMC DENTAL -->
+<section class="w-full px-margin-mobile lg:px-margin py-space-2xl bg-surface">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-space-2xl items-center">
+<div class="lg:col-span-6 relative">
+<div class="rounded-2xl overflow-hidden shadow-xl bg-surface-container-low">
+<img class="w-full h-[460px] object-cover" data-alt="An empathetic female dentist in professional charcoal scrubs consulting with a patient in an elegant oak-accented clinic suite, reviewing digital dental diagnostics on a tablet computer with gentle reassurance." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbG8Zkb2ioGDMrcxyISxoz_q48pL_9Mv8G40oWio700Flio7fCHlgBmVR-8wYAxs_MSOCje1VgydPvK22Z9tRVsW1GPnCLeoUFX1ksN1TIZn2rfJf6WxroQ5O3mldHXhnlknqVUGSeKvTPllyD0BVA_VysWH2mYH3QhB496YiAaTNU9XFh2JkPCiesEK1LD-7k1563U4yyt6TJw585GFxym8harELdKQL_pz0ySq8_jAiZ5XlWDuYUdA"/>
+</div>
+<div class="mt-space-md p-space-md rounded-xl bg-surface-container-high flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary">forum</span>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">Collaborative Diagnostics &amp; Treatment Mapping</span>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant">CONSULTATION</span>
+</div>
+</div>
+<div class="lg:col-span-6 flex flex-col gap-space-md">
+<span class="font-label-caps text-label-caps text-secondary tracking-widest uppercase">ABOUT AMC DENTAL</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">
+          A More Comfortable Way to Experience Dental Care
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+          At AMC Dental, we believe exceptional dental care begins with how you are treated as a person. Our practice provides a quiet, unhurried environment where patient comfort and clinical precision go hand in hand.
+        </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Whether visiting for routine preventive care or more complex restorative treatments, you will always be heard, respected, and fully informed at every stage of your journey.
+        </p>
+<div class="p-space-lg rounded-xl bg-surface-container-low border-l-4 border-secondary mt-space-sm">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary mt-0.5">verified_user</span>
+<p class="font-body-md text-body-md text-on-surface font-medium italic">
+              "Dedicated to clear communication, relaxed appointments, and lasting dental wellness."
+            </p>
+</div>
+</div>
+<div class="pt-space-md">
+<a class="inline-flex items-center gap-2 font-label-lg text-label-lg text-on-surface font-semibold group hover:text-secondary transition-colors" data-path="about" href="#">
+<span>Meet AMC Dental</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. SERVICES / TREATMENTS -->
+<section class="w-full px-margin-mobile lg:px-margin py-space-2xl bg-surface-container-low" id="services">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div>
+<span class="font-label-caps text-label-caps text-secondary tracking-widest uppercase block mb-1">CLINICAL EXCELLENCE</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">Your Dental Care, All in One Place</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Comprehensive, gentle treatments tailored to protect, restore, and enhance your smile with long-term stability.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg">
+<!-- 1. General Dentistry -->
+<div class="p-space-xl rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow group">
+<div>
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-secondary mb-space-md group-hover:bg-secondary-container transition-colors">
+<span class="material-symbols-outlined text-[24px]">stethoscope</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface mb-space-xs font-semibold">General Dentistry</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Routine examinations, digital diagnostics, fillings, and essential oral health maintenance.
+            </p>
+</div>
+<div class="pt-space-lg">
+<a class="inline-flex items-center gap-1 font-label-lg text-label-lg text-secondary group-hover:text-primary-container transition-colors" href="#">
+              Learn More
+              <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- 2. Dental Hygiene -->
+<div class="p-space-xl rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow group">
+<div>
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-secondary mb-space-md group-hover:bg-secondary-container transition-colors">
+<span class="material-symbols-outlined text-[24px]">clean_hands</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface mb-space-xs font-semibold">Dental Hygiene</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Thorough scale &amp; polish, gentle periodontal care, and personalized preventive advice.
+            </p>
+</div>
+<div class="pt-space-lg">
+<a class="inline-flex items-center gap-1 font-label-lg text-label-lg text-secondary group-hover:text-primary-container transition-colors" href="#">
+              Learn More
+              <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- 3. Preventive Care -->
+<div class="p-space-xl rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow group">
+<div>
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-secondary mb-space-md group-hover:bg-secondary-container transition-colors">
+<span class="material-symbols-outlined text-[24px]">shield</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface mb-space-xs font-semibold">Preventive Care</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Fissure sealants, fluoride treatments, and proactive tooth preservation strategies.
+            </p>
+</div>
+<div class="pt-space-lg">
+<a class="inline-flex items-center gap-1 font-label-lg text-label-lg text-secondary group-hover:text-primary-container transition-colors" href="#">
+              Learn More
+              <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- 4. Restorative Dentistry -->
+<div class="p-space-xl rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow group">
+<div>
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-secondary mb-space-md group-hover:bg-secondary-container transition-colors">
+<span class="material-symbols-outlined text-[24px]">dentistry</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface mb-space-xs font-semibold">Restorative Dentistry</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Natural-looking crowns, bridges, and durable solutions to restore optimal chewing function.
+            </p>
+</div>
+<div class="pt-space-lg">
+<a class="inline-flex items-center gap-1 font-label-lg text-label-lg text-secondary group-hover:text-primary-container transition-colors" href="#">
+              Learn More
+              <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- 5. Cosmetic Dentistry -->
+<div class="p-space-xl rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow group">
+<div>
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-secondary mb-space-md group-hover:bg-secondary-container transition-colors">
+<span class="material-symbols-outlined text-[24px]">auto_fix_high</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface mb-space-xs font-semibold">Cosmetic Dentistry</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Teeth whitening, composite bonding, and subtle smile enhancements focused on harmony.
+            </p>
+</div>
+<div class="pt-space-lg">
+<a class="inline-flex items-center gap-1 font-label-lg text-label-lg text-secondary group-hover:text-primary-container transition-colors" href="#">
+              Learn More
+              <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- 6. Emergency Dental Care -->
+<div class="p-space-xl rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow group">
+<div>
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-secondary mb-space-md group-hover:bg-secondary-container transition-colors">
+<span class="material-symbols-outlined text-[24px]">emergency</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface mb-space-xs font-semibold">Emergency Dental Care</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Prompt assessment and gentle relief for sudden dental discomfort, trauma, or urgent needs.
+            </p>
+</div>
+<div class="pt-space-lg">
+<a class="inline-flex items-center gap-1 font-label-lg text-label-lg text-secondary group-hover:text-primary-container transition-colors" href="#">
+              Learn More
+              <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-high/60 flex items-center justify-between text-on-surface-variant">
+<span class="font-body-sm text-body-sm">Note: All clinical treatments are preceded by an individual clinical assessment and treatment estimate.</span>
+<span class="font-label-caps text-label-caps text-secondary font-bold">BESPOKE CLINICAL PLANNING</span>
+</div>
+</div>
+</section>
+<!-- 5. PATIENT EXPERIENCE -->
+<section class="w-full px-margin-mobile lg:px-margin py-space-2xl bg-surface">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-2xl">
+<div class="text-center max-w-2xl mx-auto flex flex-col gap-space-xs">
+<span class="font-label-caps text-label-caps text-secondary tracking-widest uppercase">THE PATIENT JOURNEY</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">Care That Starts With Listening</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+          A calm, predictable three-step consultation journey designed to eliminate dental anxiety and ensure total peace of mind.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-xl">
+<!-- Step 1 -->
+<div class="p-space-xl rounded-2xl bg-surface-container-low flex flex-col gap-space-md relative overflow-hidden">
+<div class="flex items-center justify-between">
+<span class="font-display-lg text-display-lg text-secondary/30 font-bold">01</span>
+<span class="material-symbols-outlined text-secondary text-[28px]">hearing</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs font-semibold">Tell Us What You Need</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              An unhurried conversation about your dental goals, previous experiences, and any sensitivities in a relaxed, non-clinical meeting room.
+            </p>
+</div>
+<div class="mt-auto pt-space-md border-t border-surface-container-high flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">UNHURRIED DIALOGUE</span>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="p-space-xl rounded-2xl bg-surface-container-low flex flex-col gap-space-md relative overflow-hidden">
+<div class="flex items-center justify-between">
+<span class="font-display-lg text-display-lg text-secondary/30 font-bold">02</span>
+<span class="material-symbols-outlined text-secondary text-[28px]">visibility</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs font-semibold">Understand Your Options</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Clear explanations of potential treatments with transparent, straightforward guidance, accompanied by high-definition digital imaging.
+            </p>
+</div>
+<div class="mt-auto pt-space-md border-t border-surface-container-high flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">TRANSPARENT CHOICES</span>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="p-space-xl rounded-2xl bg-surface-container-low flex flex-col gap-space-md relative overflow-hidden">
+<div class="flex items-center justify-between">
+<span class="font-display-lg text-display-lg text-secondary/30 font-bold">03</span>
+<span class="material-symbols-outlined text-secondary text-[28px]">event_available</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs font-semibold">Plan Your Treatment</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              A bespoke care schedule created entirely around your lifestyle, timetable, and budget, with no pressure and clear timeframes.
+            </p>
+</div>
+<div class="mt-auto pt-space-md border-t border-surface-container-high flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">TAILORED APPOINTMENTS</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. WHY CHOOSE AMC DENTAL -->
+<section class="w-full px-margin-mobile lg:px-margin py-space-2xl bg-surface-container-low">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-2xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div>
+<span class="font-label-caps text-label-caps text-secondary tracking-widest uppercase block mb-1">THE DIFFERENCE</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">Why Patients Choose AMC Dental</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          A commitment to high clinical standards paired with an empathetic, respectful service ethos.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg">
+<div class="p-space-xl rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[32px]">workspace_premium</span>
+<h4 class="font-title-md text-title-md text-on-surface font-semibold">Professional Care</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Rigorous clinical standards delivered with gentle, experienced hands and verified protocols.
+          </p>
+</div>
+<div class="p-space-xl rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[32px]">record_voice_over</span>
+<h4 class="font-title-md text-title-md text-on-surface font-semibold">Clear Communication</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Honest, jargon-free advice so you always thoroughly understand your diagnosis and care options.
+          </p>
+</div>
+<div class="p-space-xl rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[32px]">self_improvement</span>
+<h4 class="font-title-md text-title-md text-on-surface font-semibold">Comfort-Focused</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            A tranquil practice setting crafted deliberately to make every visit stress-free and relaxed.
+          </p>
+</div>
+<div class="p-space-xl rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[32px]">tune</span>
+<h4 class="font-title-md text-title-md text-on-surface font-semibold">Personalised Care</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Care plans shaped exclusively around your individual oral health needs, schedule, and comfort.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. APPOINTMENT CTA SECTION -->
+<section class="w-full bg-primary-container text-on-primary py-space-2xl">
+<div class="max-w-4xl mx-auto px-margin-mobile lg:px-margin text-center flex flex-col items-center gap-space-lg">
+<div class="inline-flex items-center gap-2 px-space-md py-1 rounded-full bg-surface-container-lowest/10 text-on-primary-fixed text-label-caps font-label-caps">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed"></span>
+<span>WELCOMING NEW PATIENTS</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl md:text-display-lg tracking-tight text-on-primary">
+        Ready to Take the Next Step?
+      </h2>
+<p class="font-body-lg text-body-lg text-on-primary-container max-w-xl">
+        Speak with the AMC Dental team about your dental care needs, arrange a relaxed consultation, or discuss any treatment questions.
+      </p>
+<div class="flex flex-col sm:flex-row items-center gap-space-md pt-space-xs">
+<a class="w-full sm:w-auto inline-flex items-center justify-center bg-secondary text-on-secondary font-label-lg text-label-lg px-space-2xl py-space-md rounded-full shadow-lg hover:bg-secondary-fixed hover:text-on-secondary-fixed transition-all" data-path="book-appointment" href="#">
+<span class="material-symbols-outlined text-[20px] mr-2">calendar_month</span>
+          Book an Appointment
+        </a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center text-on-primary font-label-lg text-label-lg px-space-xl py-space-md rounded-full hover:bg-surface-container-lowest/10 transition-colors" href="tel:02079460128">
+<span class="material-symbols-outlined text-[20px] mr-2">phone_in_talk</span>
+          Or speak to our reception team
+        </a>
+</div>
+</div>
+</section>
+<!-- 8. LOCATION & PREMISES -->
+<section class="w-full px-margin-mobile lg:px-margin py-space-2xl bg-surface">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-xl">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-caps text-label-caps text-secondary tracking-widest uppercase">LOCATION &amp; PREMISES</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">Find Our Practice</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+          Conveniently located for local patients, featuring welcoming reception facilities and accessible premises.
+        </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Verified Premises Image -->
+<div class="lg:col-span-6 flex flex-col gap-space-sm">
+<div class="rounded-2xl overflow-hidden shadow-lg bg-surface-container">
+<img alt="AMC Dental Practice Premises &amp; Exterior Entry" class="w-full h-[320px] lg:h-[360px] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAX2y6tZxjrVOojvRurES2f8gyCFnsEHaIvB-65RD5OKw5MKw4Kb1XWjaxA0lA6_VNHm2HU3h9XVw00Vlfy5Ol-DY1WOptDZpHLF4IyopnLRPfYk9PfcSJXEsMPQkZ1COEq6lrQChHKkaJuK_aVOQaAXFWRl0zHEW5_EtVPlrAhHtqdjKUxRm-wu6pgKnimraQ1rR2o8RxHPeBRFUZ2l9JKmNAxfIkqnbHDLY3Kyw2kS4MfdN3mc3MrmvUFEcssjfK3qmM"/>
+</div>
+<div class="flex items-center justify-between px-space-xs text-on-surface-variant">
+<span class="font-body-sm text-body-sm font-medium">AMC Dental Practice Premises &amp; Exterior Entry</span>
+<span class="font-label-caps text-label-caps text-secondary font-semibold">VERIFIED PREMISES</span>
+</div>
+</div>
+<!-- Location Dossier Card -->
+<div class="lg:col-span-6 flex flex-col gap-space-md p-space-xl rounded-2xl bg-surface-container-low shadow-sm">
+<div class="flex items-center gap-space-sm">
+<div class="p-space-xs rounded-lg bg-surface-container-highest text-secondary">
+<span class="material-symbols-outlined text-[24px]">location_on</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold">AMC Dental</h3>
+<p class="font-body-sm text-body-sm text-secondary font-medium">Marylebone Private Practice</p>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest">
+<p class="font-label-caps text-label-caps text-on-surface-variant mb-1">PRACTICE LOCATION</p>
+<p class="font-body-md text-body-md text-on-surface font-semibold">
+              14 Harley Street, Marylebone, London, W1G 9PQ
+            </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              [VERIFIED PRACTICE ADDRESS — Primary Clinic Entrance on Ground Level]
+            </p>
+</div>
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">accessible</span>
+<div>
+<p class="font-label-lg text-label-lg text-on-surface font-semibold">Accessibility</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Ground-level patient access and step-free reception entrance available.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">local_parking</span>
+<div>
+<p class="font-label-lg text-label-lg text-on-surface font-semibold">Transport &amp; Parking</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Convenient local street parking and Q-Park Cavendish Square within 3 minutes walk.</p>
+</div>
+</div>
+</div>
+<div class="pt-space-sm">
+<a class="inline-flex items-center justify-center bg-primary-container text-on-primary font-label-lg text-label-lg px-space-xl py-space-md rounded-full hover:bg-secondary transition-all shadow-sm" href="https://maps.google.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px] mr-1.5">directions</span>
+              Get Directions (Google Maps) →
+            </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 9. CONTACT & ENQUIRY FORM -->
+<section class="w-full px-margin-mobile lg:px-margin py-space-2xl bg-surface-container-low">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-xl">
+<div class="flex flex-col gap-space-xs max-w-2xl">
+<span class="font-label-caps text-label-caps text-secondary tracking-widest uppercase">CONCIERGE &amp; BOOKINGS</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">Get in Touch</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+          We are here to answer your questions, outline options, and assist with personal appointment arrangements.
+        </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl">
+<!-- Contact Details Left Card -->
+<div class="lg:col-span-5 flex flex-col justify-between p-space-xl rounded-2xl bg-surface-container-lowest shadow-sm">
+<div class="flex flex-col gap-space-lg">
+<div>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold mb-1">Direct Clinic Communications</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Our team handles all inquiries with complete confidentiality and care.</p>
+</div>
+<div class="flex flex-col gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="p-space-sm rounded-lg bg-surface-container text-secondary flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">call</span>
+</div>
+<div>
+<span class="font-label-caps text-label-caps text-on-surface-variant block">DIRECT RECEPTION</span>
+<a class="font-title-md text-title-md text-on-surface font-semibold hover:text-secondary transition-colors" href="tel:02079460128">020 7946 0128</a>
+<p class="font-body-sm text-body-sm text-on-surface-variant">[VERIFIED PRACTICE PHONE — Click to Call]</p>
+</div>
+</div>
+<div class="flex items-start gap-space-md">
+<div class="p-space-sm rounded-lg bg-surface-container text-secondary flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">mail</span>
+</div>
+<div>
+<span class="font-label-caps text-label-caps text-on-surface-variant block">EMAIL ENQUIRIES</span>
+<a class="font-body-md text-body-md text-on-surface font-medium hover:text-secondary transition-colors" href="mailto:concierge@amcdental.co.uk">concierge@amcdental.co.uk</a>
+</div>
+</div>
+<div class="flex items-start gap-space-md">
+<div class="p-space-sm rounded-lg bg-surface-container text-secondary flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">pin_drop</span>
+</div>
+<div>
+<span class="font-label-caps text-label-caps text-on-surface-variant block">CLINIC ADDRESS</span>
+<p class="font-body-md text-body-md text-on-surface">14 Harley Street, Marylebone, London, W1G 9PQ</p>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-space-xl">
+<a class="w-full inline-flex items-center justify-center bg-surface-container text-on-surface font-label-lg text-label-lg px-space-lg py-space-md rounded-full hover:bg-secondary hover:text-on-secondary transition-all" href="tel:02079460128">
+<span class="material-symbols-outlined text-[18px] mr-2">phone</span>
+              Call AMC Dental
+            </a>
+</div>
+</div>
+<!-- Interactive Contact Form -->
+<div class="lg:col-span-7 p-space-xl rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-md">
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">info</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+<span class="font-semibold text-on-surface">Privacy Notice:</span> Please do not submit sensitive medical or diagnostic information through this general enquiry form. Clinical history is gathered confidentially in person.
+            </p>
+</div>
+<form class="flex flex-col gap-space-md" onsubmit="event.preventDefault(); alert('Thank you. A member of the AMC Dental reception team will contact you shortly.');">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="fullName">Full Name</label>
+<input class="w-full px-space-md py-space-sm rounded-lg bg-surface-container-low text-on-surface text-body-md focus:outline-none focus:ring-2 focus:ring-secondary/40 transition-all placeholder:text-outline" id="fullName" placeholder="e.g. Eleanor Vance" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="emailAddress">Email Address</label>
+<input class="w-full px-space-md py-space-sm rounded-lg bg-surface-container-low text-on-surface text-body-md focus:outline-none focus:ring-2 focus:ring-secondary/40 transition-all placeholder:text-outline" id="emailAddress" placeholder="eleanor@example.com" required="" type="email"/>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="phoneNumber">Phone Number</label>
+<input class="w-full px-space-md py-space-sm rounded-lg bg-surface-container-low text-on-surface text-body-md focus:outline-none focus:ring-2 focus:ring-secondary/40 transition-all placeholder:text-outline" id="phoneNumber" placeholder="07123 456789" required="" type="tel"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="timePreference">Preferred Appointment Time</label>
+<select class="w-full px-space-md py-space-sm rounded-lg bg-surface-container-low text-on-surface text-body-md focus:outline-none focus:ring-2 focus:ring-secondary/40 transition-all" id="timePreference">
+<option>Morning (08:30 – 12:00)</option>
+<option>Afternoon (12:00 – 16:00)</option>
+<option>Early Evening (16:00 – 18:00)</option>
+<option>Saturday (By Special Appointment)</option>
+</select>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="messageField">Enquiry / Message</label>
+<textarea class="w-full px-space-md py-space-sm rounded-lg bg-surface-container-low text-on-surface text-body-md focus:outline-none focus:ring-2 focus:ring-secondary/40 transition-all placeholder:text-outline" id="messageField" placeholder="How can our dental team assist you today?" required="" rows="4"></textarea>
+</div>
+<button class="w-full inline-flex items-center justify-center bg-primary-container text-on-primary font-label-lg text-label-lg px-space-xl py-space-md rounded-full hover:bg-secondary transition-all shadow-md mt-space-xs" type="submit">
+<span class="material-symbols-outlined text-[18px] mr-2">send</span>
+              Send Consultation Request
+            </button>
+</form>
+</div>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-primary-container text-on-primary pt-space-2xl pb-space-xl"><div class="w-full px-margin-mobile lg:px-margin"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl pb-space-2xl"><div class="flex flex-col"><div class="flex items-center gap-space-sm mb-space-md"><img alt="AMC Dental Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WFWQUd9ZC0-ZmW4NVCO-ZEg4kEm4PZVGvGxAsf-thJ5eqeMXlghfB92P8v7NW8uJC3fdpjytIVnagQa0T4tLtGRhVAW4843bSRgE9WbzCBun2dEnCYL8teXwMflndDeg-IgZY4JyMwEhdgVPi9V5jgMrXYi-zZLUnJtQVUkCjheY0BnaDTDYKpR0oR3OnVYSU0m2Mk3lTCIhlgkbuyuPuH1znPqDbBN13c7Nc9LQh2Kl2OK_QWTtEvbWo"/><span class="font-title-md text-title-md text-on-primary tracking-tight">AMC DENTAL</span></div><p class="font-body-md text-body-md text-on-primary-container mb-space-md">Dental care designed around people. Clinical excellence in a serene, reassuring environment.</p><div class="inline-flex items-center gap-2 px-space-sm py-1 rounded-full bg-surface-container-low/10 text-on-primary-fixed-variant font-label-caps text-label-caps w-fit"><span class="material-symbols-outlined text-[16px] text-secondary">verified</span>Verified Private Practice • Marylebone</div></div><div class="flex flex-col"><h4 class="font-title-md text-title-md text-on-primary mb-space-md">Navigation</h4><ul class="flex flex-col gap-space-sm"><li class="leading-none"><a class="font-body-md text-body-md text-on-primary-container hover:text-on-primary transition-colors" data-path="about" href="#">About AMC Dental</a></li><li class="leading-none"><a class="font-body-md text-body-md text-on-primary-container hover:text-on-primary transition-colors" data-path="treatments" href="#">Treatments &amp; Services</a></li><li class="leading-none"><a class="font-body-md text-body-md text-on-primary-container hover:text-on-primary transition-colors" data-path="patient-care" href="#">Patient Experience</a></li><li class="leading-none"><a class="font-body-md text-body-md text-on-primary-container hover:text-on-primary transition-colors" data-path="faqs" href="#">FAQs</a></li><li class="leading-none"><a class="font-body-md text-body-md text-on-primary-container hover:text-on-primary transition-colors" data-path="philosophy" href="#">Practice Philosophy</a></li></ul></div><div class="flex flex-col"><h4 class="font-title-md text-title-md text-on-primary mb-space-md">Contact &amp; Location</h4><address class="not-italic flex flex-col gap-space-sm font-body-md text-body-md text-on-primary-container"><p class="text-on-primary">14 Harley Street, Marylebone<br/>London, W1G 9PQ</p><p><span class="font-label-caps text-label-caps text-on-primary-fixed-variant block">Telephone</span><a class="text-on-primary hover:text-secondary-fixed transition-colors" href="tel:02079460128">020 7946 0128</a></p><p><span class="font-label-caps text-label-caps text-on-primary-fixed-variant block">Direct Enquiries</span><a class="text-on-primary hover:text-secondary-fixed transition-colors" href="mailto:concierge@amcdental.co.uk">concierge@amcdental.co.uk</a></p></address><a class="inline-flex items-center gap-1 font-label-md text-label-md text-secondary-fixed hover:underline mt-space-sm" href="#"><span class="material-symbols-outlined text-[16px]">map</span>Get Directions</a></div><div class="flex flex-col"><h4 class="font-title-md text-title-md text-on-primary mb-space-md">Practice Hours</h4><div class="font-body-sm text-body-sm text-on-primary-container flex flex-col gap-1 mb-space-md"><div class="flex justify-between"><span class="text-on-primary">Monday – Thursday</span><span>08:30 – 18:00</span></div><div class="flex justify-between"><span class="text-on-primary">Friday</span><span>08:30 – 17:00</span></div><div class="flex justify-between"><span class="text-on-primary">Saturday</span><span>By Appointment</span></div><div class="flex justify-between"><span class="text-on-primary-fixed-variant">Sunday</span><span class="text-on-primary-fixed-variant">Closed</span></div></div><a class="inline-flex items-center justify-center bg-secondary text-on-secondary font-label-lg text-label-lg px-space-md py-space-sm rounded-full hover:bg-secondary-fixed hover:text-on-secondary-fixed transition-all mb-space-sm" data-path="book-appointment" href="#">Book an Appointment</a><p class="font-body-sm text-body-sm text-on-primary-fixed-variant">For registered patients experiencing acute pain outside clinic hours, our dedicated emergency triage protocol operates 24/7.</p></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md font-body-sm text-body-sm text-on-primary-container"><p>© 2025 AMC Dental. All rights reserved.</p><div class="flex flex-wrap items-center gap-space-md"><a class="hover:text-on-primary transition-colors" data-path="privacy-policy" href="#">Privacy Policy</a><a class="hover:text-on-primary transition-colors" data-path="terms-of-service" href="#">Terms of Service</a><a class="hover:text-on-primary transition-colors" data-path="cookie-policy" href="#">Cookie Policy</a><span class="text-on-primary-fixed-variant">GDC Regulation Reg. #482910</span></div></div></div></footer><div class="fixed bottom-0 left-0 right-0 z-40 lg:hidden bg-surface/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)] px-margin-mobile py-space-sm"><div class="flex items-center gap-space-sm"><a class="flex-1 inline-flex items-center justify-center gap-1.5 py-space-sm rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md" href="tel:02079460128"><span class="material-symbols-outlined text-[16px]">call</span>Call Practice</a><a class="flex-[1.5] inline-flex items-center justify-center gap-1.5 py-space-sm rounded-full bg-primary-container text-on-primary font-label-md text-label-md" data-path="book-appointment" href="#"><span class="material-symbols-outlined text-[16px]">calendar_month</span>Book Online</a></div></div></body></html>

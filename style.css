@@ -1,0 +1,142 @@
+/* AMC Dental Laboratory - Bespoke Styles & Micro-Interactions */
+
+:root {
+  --color-charcoal-dark: #121820;
+  --color-charcoal-deep: #1a222d;
+  --color-stone-ivory: #faf9f6;
+  --color-stone-sand: #f4f1ea;
+  --color-stone-border: #e4e0d7;
+  --color-teal-accent: #246663;
+  --color-teal-hover: #1b4f4d;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--color-stone-ivory);
+  color: #1a1c1a;
+  overflow-x: hidden;
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Header dynamic scroll effect */
+#main-header {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+#main-header.header-scrolled {
+  box-shadow: 0 4px 20px -4px rgba(18, 24, 32, 0.08);
+  border-bottom-color: rgba(228, 224, 215, 0.9);
+}
+
+#main-header.header-scrolled .header-inner {
+  height: 4.25rem;
+}
+
+/* Before / After Comparison Slider */
+.before-after-wrapper {
+  position: relative;
+  overflow: hidden;
+  user-select: none;
+  touch-action: pan-y;
+  cursor: ew-resize;
+}
+
+.before-after-handle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background-color: #ffffff;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.45);
+  transform: translateX(-50%);
+  pointer-events: none;
+  z-index: 20;
+}
+
+.before-after-knob {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 9999px;
+  background-color: #ffffff;
+  border: 2px solid var(--color-teal-accent);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-teal-accent);
+  pointer-events: auto;
+  cursor: grab;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.before-after-knob:active {
+  cursor: grabbing;
+  transform: translate(-50%, -50%) scale(1.08);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+}
+
+/* Arch Timeline Connector (Subtle Dental Arch Aesthetic) */
+.dental-arch-path {
+  stroke-dasharray: 6 6;
+  animation: dashAnimation 30s linear infinite;
+}
+
+@keyframes dashAnimation {
+  to {
+    stroke-dashoffset: -200;
+  }
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f4f1ea;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c8c3b7;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a9a396;
+}
+
+/* Focus styles for keyboard accessibility */
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+  outline: 2px solid var(--color-teal-accent);
+  outline-offset: 2px;
+}
+
+/* Print Stylesheet for Laboratory referrals & patient guides */
+@media print {
+  header, footer, #mobile-bottom-bar, #config-modal, #open-config-btn {
+    display: none !important;
+  }
+  body {
+    background: white !important;
+    color: black !important;
+  }
+}
