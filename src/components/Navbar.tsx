@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Phone, MessageSquare, Menu, X, Clock, MapPin, Sparkles } from 'lucide-react';
+import { Phone, MessageSquare, Menu, X, Clock, Sparkles } from 'lucide-react';
 import { amcConfig } from '../data/config';
 
 interface NavbarProps {
@@ -22,24 +22,25 @@ export const Navbar: React.FC<NavbarProps> = ({ isOpenNow, statusText }) => {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-brand-border/70 transition-all duration-300 ${
+        className={`fixed top-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-b border-brand-border/70 transition-all duration-300 ${
           isScrolled ? 'shadow-md py-0' : 'py-0'
         }`}
       >
         {/* Top Micro Announcement Bar */}
-        <div className="bg-brand-charcoal text-stone-300 text-xs py-1.5 px-4 sm:px-8 border-b border-white/5">
+        <div className="bg-brand-charcoal text-stone-300 text-xs py-1.5 px-4 sm:px-6 lg:px-8 border-b border-white/5">
           <div className="max-w-7xl mx-auto flex items-center justify-between gap-4">
             <div className="flex items-center gap-3">
-              <span className="inline-flex items-center gap-1.5 text-brand-sandstone font-medium">
+              <span className="inline-flex items-center gap-1.5 text-brand-sandstone font-medium whitespace-nowrap">
                 <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                <span className="hidden sm:inline">Scarborough Dental Laboratory</span>
-                <span className="sm:hidden">Scarborough Lab</span>
+                <span>Scarborough Dental Laboratory</span>
               </span>
               <span className="hidden md:inline text-stone-500">•</span>
-              <span className="hidden md:inline text-stone-400">40+ Years of Denture Repair Experience</span>
+              <span className="hidden md:inline text-stone-400 whitespace-nowrap">
+                40+ Years of Denture Repair Experience
+              </span>
             </div>
 
-            <div className="flex items-center gap-4 text-xs">
+            <div className="flex items-center gap-4 text-xs whitespace-nowrap">
               {/* Live Open Status Pill */}
               <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-500/15 text-emerald-300 border border-emerald-500/25">
                 <Clock className="w-3.5 h-3.5 text-emerald-400" />
@@ -56,45 +57,34 @@ export const Navbar: React.FC<NavbarProps> = ({ isOpenNow, statusText }) => {
                 <Phone className="w-3.5 h-3.5 text-brand-tealLight" />
                 <span>{amcConfig.contact.telephone}</span>
               </a>
-
-              {/* Direct WhatsApp in Top Bar */}
-              <a
-                href={`https://wa.me/${amcConfig.contact.whatsappRaw}?text=${encodeURIComponent(amcConfig.contact.whatsappDefaultMessage)}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 text-emerald-400 hover:text-emerald-300 font-semibold transition-colors"
-              >
-                <MessageSquare className="w-3.5 h-3.5" />
-                <span className="hidden sm:inline">WhatsApp</span>
-              </a>
             </div>
           </div>
         </div>
 
         {/* Main Header Inner */}
-        <div className={`max-w-7xl mx-auto px-4 sm:px-8 flex items-center justify-between gap-4 transition-all duration-300 ${
+        <div className={`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-4 transition-all duration-300 ${
           isScrolled ? 'h-16' : 'h-20'
         }`}>
-          {/* Logo / Brand Name */}
-          <a href="#" className="group flex items-center gap-3.5 focus:outline-none">
-            <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-lg bg-brand-charcoal text-white flex items-center justify-center shadow-sm group-hover:bg-brand-teal transition-colors flex-shrink-0">
+          {/* Logo / Brand Name - Strictly on one line, protected with whitespace-nowrap & flex-shrink-0 */}
+          <a href="#" className="group flex items-center gap-3 focus:outline-none flex-shrink-0">
+            <div className="w-10 h-10 rounded-lg bg-brand-charcoal text-white flex items-center justify-center shadow-sm group-hover:bg-brand-teal transition-colors flex-shrink-0">
               <Sparkles className="w-5 h-5 text-brand-sandstone" />
             </div>
             <div className="flex flex-col">
-              <span className="text-base sm:text-lg md:text-xl font-bold tracking-tight text-brand-charcoal group-hover:text-brand-teal transition-colors leading-tight">
+              <span className="text-base sm:text-lg lg:text-xl font-bold tracking-tight text-brand-charcoal group-hover:text-brand-teal transition-colors leading-none whitespace-nowrap">
                 AMC DENTAL LABORATORY
               </span>
-              <span className="text-[10px] sm:text-[11px] font-semibold text-stone-500 uppercase tracking-widest leading-none mt-0.5">
+              <span className="text-[10px] sm:text-[11px] font-semibold text-stone-500 uppercase tracking-widest leading-none mt-1 whitespace-nowrap">
                 Denture Specialist · Scarborough
               </span>
             </div>
           </a>
 
           {/* Desktop Nav Links */}
-          <nav className="hidden lg:flex items-center gap-6 xl:gap-7 text-sm font-semibold text-stone-700" aria-label="Main Navigation">
+          <nav className="hidden lg:flex items-center gap-4 xl:gap-6 text-[13px] xl:text-sm font-semibold text-stone-700 whitespace-nowrap" aria-label="Main Navigation">
             <a href="#about-section" className="hover:text-brand-teal transition-colors py-1">About</a>
             <a href="#services-section" className="hover:text-brand-teal transition-colors py-1">Services</a>
-            <a href="#denture-repair-section" className="hover:text-brand-teal transition-colors py-1 flex items-center gap-1.5 text-stone-900 font-bold">
+            <a href="#denture-repair-section" className="hover:text-brand-teal transition-colors py-1 flex items-center gap-1 text-stone-900 font-bold">
               <span>Denture Repairs</span>
               <span className="w-1.5 h-1.5 rounded-full bg-brand-teal"></span>
             </a>
@@ -105,25 +95,14 @@ export const Navbar: React.FC<NavbarProps> = ({ isOpenNow, statusText }) => {
             <a href="#location-section" className="hover:text-brand-teal transition-colors py-1">Contact</a>
           </nav>
 
-          {/* Desktop Action CTAs */}
-          <div className="hidden md:flex items-center gap-3">
+          {/* Right Action CTA: Clean Single Call Button shifted to the far right */}
+          <div className="hidden md:flex items-center flex-shrink-0">
             <a
               href={`tel:${amcConfig.contact.telephoneRaw}`}
-              className="inline-flex items-center gap-2 bg-brand-charcoal text-white hover:bg-brand-teal font-semibold text-sm px-4 py-2.5 rounded-lg shadow-sm hover:shadow transition-all duration-200"
+              className="inline-flex items-center gap-2 bg-brand-charcoal text-white hover:bg-brand-teal font-bold text-sm px-5 py-2.5 rounded-xl shadow-sm hover:shadow transition-all duration-200 whitespace-nowrap"
             >
               <Phone className="w-4 h-4 text-brand-tealLight" />
               <span>Call {amcConfig.contact.telephone}</span>
-            </a>
-
-            <a
-              href={`https://wa.me/${amcConfig.contact.whatsappRaw}?text=${encodeURIComponent(amcConfig.contact.whatsappDefaultMessage)}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-emerald-700 text-white hover:bg-emerald-800 font-semibold text-sm px-3.5 py-2.5 rounded-lg shadow-sm transition-all duration-200"
-              title="Message Mark Culling on WhatsApp"
-            >
-              <MessageSquare className="w-4 h-4" />
-              <span className="hidden xl:inline">WhatsApp</span>
             </a>
           </div>
 
@@ -135,15 +114,6 @@ export const Navbar: React.FC<NavbarProps> = ({ isOpenNow, statusText }) => {
               aria-label="Call AMC Dental Laboratory"
             >
               <Phone className="w-4 h-4" />
-            </a>
-            <a
-              href={`https://wa.me/${amcConfig.contact.whatsappRaw}?text=${encodeURIComponent(amcConfig.contact.whatsappDefaultMessage)}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-2 rounded-lg bg-emerald-700 text-white hover:bg-emerald-800 transition-colors"
-              aria-label="WhatsApp AMC Dental Laboratory"
-            >
-              <MessageSquare className="w-4 h-4" />
             </a>
             <button
               onClick={() => setMobileMenuOpen(true)}
@@ -177,7 +147,7 @@ export const Navbar: React.FC<NavbarProps> = ({ isOpenNow, statusText }) => {
               <div className="w-8 h-8 rounded bg-brand-charcoal text-white flex items-center justify-center font-bold text-xs">
                 AMC
               </div>
-              <span className="font-bold text-stone-900 text-sm">Dental Laboratory</span>
+              <span className="font-bold text-stone-900 text-sm whitespace-nowrap">Dental Laboratory</span>
             </div>
             <button
               onClick={() => setMobileMenuOpen(false)}

@@ -17,6 +17,7 @@ import { LocationHours } from './components/LocationHours';
 import { ContactSection } from './components/ContactSection';
 import { Footer } from './components/Footer';
 import { MobileBottomBar } from './components/MobileBottomBar';
+import { FloatingWhatsApp } from './components/FloatingWhatsApp';
 import { ConfigModal } from './components/ConfigModal';
 
 export const App: React.FC = () => {
@@ -118,9 +119,13 @@ export const App: React.FC = () => {
       {/* 17. Mobile-First Sticky Bottom Action Bar */}
       <MobileBottomBar />
 
-      {/* 18. Config Modal Inspector */}
+      {/* 18. Floating WhatsApp Button anchored at Bottom Right */}
+      <FloatingWhatsApp />
+
+      {/* 19. Config Modal Inspector */}
       <ConfigModal isOpen={configModalOpen} onClose={() => setConfigModalOpen(false)} />
     </div>
   );
 };
+
 export default App;
